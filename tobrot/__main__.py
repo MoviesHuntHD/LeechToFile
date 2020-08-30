@@ -154,7 +154,7 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumb@leechasvideobot@leechasvideobot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumb@leechasvideobot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
